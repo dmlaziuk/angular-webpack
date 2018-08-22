@@ -1,8 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App.js'
+import angular from 'angular'
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-)
+class RootController {
+  constructor () {
+    this.value = 'AngularJS 1.7.3'
+  }
+}
+
+const moduleName = 'app'
+
+angular.module(moduleName, [])
+  .controller('RootController', RootController)
+
+export default moduleName

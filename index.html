@@ -1,13 +1,13 @@
 <!doctype html>
-<html>
+<html ng-app="app">
 
 <head>
   <meta charset="UTF-8" />
-  <title>React Starter</title>
+  <title>Angular app</title>
 </head>
 
-<body>
-  <div id="app"></div>
+<body ng-controller="RootController as root">
+  <h1>Hello, {{root.value}}!</h1>
   <script src="main.js"></script>
 </body>
 
