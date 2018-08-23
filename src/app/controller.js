@@ -1,6 +1,6 @@
 export default class AppController {
   constructor () {
-    this.name = 'Angular 1.7.3'
+    this.title = 'AngularJS with webpack on ES2015'
   }
   $onInit () {
     console.log(this)

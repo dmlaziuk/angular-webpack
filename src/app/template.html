@@ -1,4 +1,7 @@
 <div>
-  <h1>Hello, {{$ctrl.name}}!</h1>
-  <my-component my-value='42'></my-component>
+  <h1>{{$ctrl.title}}</h1>
+  <my-component my-value='Header'></my-component>
+  <a ui-sref="hello" ui-sref-active="active">Hello</a>
+  <a ui-sref="about" ui-sref-active="active">About</a>
+  <ui-view></ui-view>
 </div>
