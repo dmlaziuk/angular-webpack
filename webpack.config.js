@@ -1,9 +1,12 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   module: {
     rules: [
-      { 
+      {
         test: /\.html$/,
-        loader: 'raw-loader' },
+        loader: 'raw-loader'
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -11,5 +14,12 @@ module.exports = {
         options: { presets: [ 'env' ] }
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      inject: 'body',
+      hash: true
+    })
+  ]
 }

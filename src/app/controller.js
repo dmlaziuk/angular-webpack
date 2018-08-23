@@ -1,5 +1,8 @@
 export default class AppController {
-  constructor() {
-    this.value = 'AngularJS 1.7.3'
+  constructor () {
+    this.name = 'Angular 1.7.3'
+  }
+  $onInit () {
+    console.log(this)
   }
 }
